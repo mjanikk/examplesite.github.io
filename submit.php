@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Libe Technologies :: Demo System</title>
+<title>Sustain Pickup Code Generation</title>
 <meta http-equiv="Refresh" content="60;url=index.php" />
 <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
 <link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
@@ -21,10 +21,10 @@
     <section align="center">
     	<img src="libetech-small.png" alt="LibeTech">
         <br />
-		<h1>DEMO Check-In System (HEC 2012)</h1>
+		<h1>Sustain Secure Pickup QR Code</h1>
         <br />
         <div align="center">
-        <div>For the purposes of this demo, you are now "checked in" until the next person checks in.  You will receive an email with a unique QR code shortly.  Scan it on the door to gain entrance to the room!<br /><br />
+        <div>For the purposes of this demo, you are now "in pick up use" until the next person orders.  You will receive an email with a unique QR code shortly.  Scan it on the door to gain entrance to the room!<br /><br />
         Please wait while your unique code is generated.  Do not refresh this page or navigate away.  This may take up to 1 minute...
         <div id="loading">
 			<img id="loading-image" src="loading.gif" alt="Working..." />
@@ -64,14 +64,14 @@
 			$mail = new PHPMailer(true); // the true param means it will throw exceptions on errors, which we need to catch
 			$mail->isSendMail(); // telling the class to use SendMail
 			try {
-			  $mail->Host       = "smtp.1and1.com"; // SMTP server
-			  $mail->Port       = 25;                    // set the SMTP port
-			  $mail->SetFrom('checkin@libetech.com', 'LibeTech CheckIn Service');
+			  $mail->Host       = "smtp.gmail.com"; // SMTP server
+			  $mail->Port       = 587;                    // set the SMTP port
+			  $mail->SetFrom('meghankjanicki@gmail.com', 'Sustain Secure Pickup Service');
 			  $mail->AddAddress($email, $fname . " " . $lname);
-			  $mail->Subject = 'Your HEC Demo RoomKey';
+			  $mail->Subject = 'Your Sustain Pickup Code';
 			
 			  $mail->AddEmbeddedImage("codes/QR_" . $key . ".png", "attach", "QR_" . $key . ".png");
-			  $mail->Body = 'Hi ' . $fname . ' ' . $lname . '!<br />Thanks for checking out LibeTech.  Scan your unique QR code below at the door lock to unlock your room.  It will remain valid until the next user has checked into the room.  Enjoy your stay! <br /><img src="cid:attach"> ';
+			  $mail->Body = 'Hi ' . $fname . ' ' . $lname . '!<br />Thanks for checking out Sustain.  Scan your unique QR code below at the door lock to unlock your room.  It will remain valid until the next user has checked into the room.  Enjoy your stay! <br /><img src="cid:attach"> ';
 			  $mail->IsHTML(true);
 			  $mail->Send();
 			  echo "<br /><br /><h2>Success!</h2>Check your email for your Check-In QR Code.<br />\n";
