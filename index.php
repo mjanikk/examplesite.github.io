@@ -2,11 +2,11 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Sustain Secure Pickup Code :: Demo System</title>
+<title>Sustain Secure Pickup :: Demo System</title>
 
 <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
 <script src="gen_validatorv4.js" type="text/javascript"></script>
-<link href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
 <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 
@@ -19,10 +19,10 @@
     <section align="center">
     	<img src="libetech-small.png" alt="LibeTech">
         <br />
-		<h1>DEMO Sustain Secure Pickup QR Code System</h1>
+		<h1>DEMO Sustain Secure Pickup Code</h1>
         <br />
         <div align="center">
-        <div>Have a smartphone? Enter your information below.  You will receive an email with your check-in QR code. Test it out on the demo lock system!</div></div>
+        <div>Have a smartphone? Enter your information below.  You will receive an email with your pickup QR code! Test it out on the demo lock system!</div></div>
         <br />
         <br />
     </section>
