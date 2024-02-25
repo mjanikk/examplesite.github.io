@@ -64,8 +64,8 @@
 			$mail = new PHPMailer(true); // the true param means it will throw exceptions on errors, which we need to catch
 			$mail->isSendMail(); // telling the class to use SendMail
 			try {
-			  $mail->Host       = "smtp.1and1.com"; // SMTP server
-			  $mail->Port       = 25;                    // set the SMTP port
+			  $mail->Host       = "smtp.gmail.com"; // SMTP server
+			  $mail->Port       = 587;                    // set the SMTP port
 			  $mail->SetFrom('checkin@libetech.com', 'LibeTech CheckIn Service');
 			  $mail->AddAddress($email, $fname . " " . $lname);
 			  $mail->Subject = 'Your HEC Demo RoomKey';
