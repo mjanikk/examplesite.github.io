@@ -46,8 +46,8 @@
 			$key = uniqid (rand () . "_",true);
 			//echo $key;
 			copy('http://chart.googleapis.com/chart?chs=300x300&cht=qr&chl=' . $key, "codes/QR_" . $key . ".png");
-			//echo "<img src='codes/QR_" . $key . ".png'/>";
-			//echo "<br>";
+			echo "<img src='codes/QR_" . $key . ".png'/>";
+			echo "<br>";
 			
 			//this md5 encrypts the username from above, so its ready to be stored in your database
 			//This hashed version is what is saved and sent to the door lock.  The door lock never actually sees the unhashed unique ID.
