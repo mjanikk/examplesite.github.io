@@ -67,10 +67,10 @@
 			  $mail->Host       = "smtp.gmail.com"; // SMTP server
 			  $mail->Port       = 587;                    // set the SMTP port
 			$mail->SMTPAuth = true;
-			$mail->Username = 'meghankjanicki@gmail.com';
-			$mail->Password = 'Future373+';
+			$mail->Username = 'sustaincapstone@gmail.com';
+			$mail->Password = 'CreateXsustain';
 			$mail->SMTPSecure = 'tls';
-			  $mail->SetFrom('meghankjanicki@gmail.com', 'Sustain Secure Pickup Service');
+			  $mail->SetFrom('sustaincapstone@gmail.com', 'Sustain Secure Pickup Service');
 			  $mail->AddAddress($email, $fname . " " . $lname);
 			  $mail->Subject = 'Your Sustain Pickup Code';
 			
