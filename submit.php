@@ -45,7 +45,7 @@
 			//This is encoded into a QR code and emailed to the user
 			$key = uniqid (rand () . "_",true);
 			//echo $key;
-			copy('https://chart.googleapis.com/chart?chs=300x300&cht=qr&chl=' . $key, "codes/QR_" . $key . ".png");
+			copy('http://chart.googleapis.com/chart?chs=300x300&cht=qr&chl=' . $key, "codes/QR_" . $key . ".png");
 			//echo "<img src='codes/QR_" . $key . ".png'/>";
 			//echo "<br>";
 			
