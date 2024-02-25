@@ -75,7 +75,7 @@
 			  $mail->Subject = 'Your Sustain Pickup Code';
 			
 			  $mail->AddEmbeddedImage("codes/QR_" . $key . ".png", "attach", "QR_" . $key . ".png");
-			  $mail->Body = 'Hi ' . $fname . ' ' . $lname . '!<br />Thanks for checking out Sustain.  Scan your unique QR code below at the door lock to unlock your room.  It will remain valid until the next user has checked into the room.  Enjoy your stay! <br /><img src="cid:attach"> ';
+			  $mail->Body = 'Hi ' . $fname . ' ' . $lname . '!<br />Thanks for checking out Sustain.  Scan your unique QR code below at the door lock to unlock your locker.  It will remain active until next occupancy occurs! Enjoy your home cooked meal via Sustain! <br /><img src="cid:attach"> ';
 			  $mail->IsHTML(true);
 			  $mail->Send();
 
