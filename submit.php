@@ -66,6 +66,10 @@
 			try {
 			  $mail->Host       = "smtp.gmail.com"; // SMTP server
 			  $mail->Port       = 587;                    // set the SMTP port
+			$mail->SMTPAuth = true;
+			$mail->Username = 'meghankjanicki@gmail.com';
+			$mail->Password = 'Future373+';
+			$mail->SMTPSecure = 'tls';
 			  $mail->SetFrom('meghankjanicki@gmail.com', 'Sustain Secure Pickup Service');
 			  $mail->AddAddress($email, $fname . " " . $lname);
 			  $mail->Subject = 'Your Sustain Pickup Code';
@@ -74,6 +78,10 @@
 			  $mail->Body = 'Hi ' . $fname . ' ' . $lname . '!<br />Thanks for checking out Sustain.  Scan your unique QR code below at the door lock to unlock your room.  It will remain valid until the next user has checked into the room.  Enjoy your stay! <br /><img src="cid:attach"> ';
 			  $mail->IsHTML(true);
 			  $mail->Send();
+
+
+
+		
 			  echo "<br /><br /><h2>Success!</h2>Check your email for your Check-In QR Code.<br />\n";
 			} catch (phpmailerException $e) {
 			  echo $e->errorMessage(); //Pretty error messages from PHPMailer
