@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <title>Sustain Pickup Code Generation</title>
-<meta http-equiv="Refresh" content="60;url=index.php" />
+<meta https-equiv="Refresh" content="60;url=index.php" />
 <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
-<link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
 <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 
